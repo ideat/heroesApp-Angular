@@ -7,6 +7,8 @@ import { HeroesRoutingModule } from './heroes/heroes-routing.module';
 import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
